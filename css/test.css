@@ -1,0 +1,284 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../images/pexels-brazil-topno-1004597.jpg);
+}
+
+
+.parent {
+    background-color: transparent;
+    width: 365px;
+    height: 375px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.feat {
+    position: relative;
+}
+
+.feat i {
+    position: absolute;
+    top: -110px;
+    font-size: 40px;
+    left: 146px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.child {
+    position: relative;
+}
+
+.parent .child {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+.child label {
+    position: relative;
+}
+
+.parent .child label {
+    position: absolute;
+    top: -23px;
+}
+
+.child input {
+    width: 100%;
+    border: 0 solid transparent;
+    outline: 0 solid transparent;
+    background-color: transparent;
+}
+
+.child hr {
+    width: 350px;
+}
+
+.child_one {
+    position: relative;
+}
+
+.child_one input {
+    width: 100%;
+    border: 0 solid transparent;
+    outline: 0 solid transparent;
+    background-color: transparent;
+}
+
+.child_one hr {
+    width: 350px;
+}
+
+.parent .child_one {
+    position: absolute;
+    left: 10px;
+    top: 105px;
+}
+
+.child_one label {
+    position: relative;
+}
+
+.parent .child_one label {
+    position: absolute;
+    top: -23px;
+}
+
+.button {
+    position: relative;
+}
+
+.button button {
+    position: absolute;
+    top: 75px;
+    width: 250px;
+    background-color: white;
+    border: 0 solid transparent;
+    padding: 10px;
+    left: 65px;
+}
+
+.button hr {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    width: 360px;
+    border: none;
+    border-top: 1px double #aaa;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.button hr:after {
+    background: #fff;
+    content: 'OR';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    background-color: transparent;
+}
+
+.media {
+    position: relative;
+}
+
+.media .one {
+    position: absolute;
+    background-color: blue;
+    border: 0 solid transparent;
+    color: white;
+    width: 160px;
+    padding: 7px;
+    top: 165px;
+    left: 14px;
+    text-align: center;
+}
+
+.media .two {
+    position: absolute;
+    width: 160px;
+    padding: 7px;
+    top: 165px;
+    right: 12px;
+    text-align: center;
+    background-color: red;
+    border: 0 solid transparent;
+    color: white;
+}
+
+.links {
+    position: relative;
+}
+
+.links p {
+    position: absolute;
+    top: 200px;
+    left: 55px;
+}
+
+.links a {
+    position: absolute;
+    top: 215px;
+    left: 240px;
+}
+
+.feat i {
+    position: absolute;
+    top: -130px;
+    left: 155px;
+}
+
+.links p {
+    position: absolute;
+    left: 5px;
+    top: 206px;
+}
+
+.links a {
+    position: absolute;
+    left: 237px;
+    top: 225px;
+}
+
+@media (max-width: 767px) {
+    .parent {
+        width: 295px;
+        height: 360px;
+    }
+
+    .parent .child label {
+        color: white;
+    }
+
+    .parent .child_one label {
+        color: white;
+    }
+
+    .parent h3 {
+        color: white;
+    }
+
+    .child hr {
+        width: 250px;
+    }
+
+    .child_one hr {
+        width: 250px;
+    }
+
+    .button button {
+        position: absolute;
+        top: 81px;
+        width: 140px;
+        padding: 8px;
+        left: 75px;
+    }
+
+    .button hr {
+        position: absolute;
+        top: 135px;
+        left: 0px;
+        width: 280px;
+    }
+
+    .button hr:after {
+        content: 'OR';
+        padding: 0 4px;
+        position: relative;
+        top: -12px;
+        font-size: 20px;
+    }
+
+    .media .two {
+        position: absolute;
+        width: 115px;
+        padding: 7px;
+        top: 165px;
+        right: 12px
+    }
+
+    .media .one {
+        position: absolute;
+        width: 115px;
+        padding: 7px;
+        top: 165px;
+        left: 14px;
+    }
+
+    .links p {
+        position: absolute;
+        left: 10px;
+        top: 230px;
+        color: white;
+    }
+
+    .links a {
+        position: absolute;
+        left: 195px;
+        top: 246px;
+        text-decoration: none;
+    }
+
+    .feat i {
+        position: absolute;
+        top: -109px;
+        left: 120px;
+    }
+}
